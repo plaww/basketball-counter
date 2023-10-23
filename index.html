@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BasketBall Scoreboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center bg-indigo-950">
+    <div id="homeboard" class="px-6 py-6">
+        <h3 class="text-5xl text-white font-bold text-center">HOME</h3>
+        <h2 id="home-el" class="block text-8xl text-red-500 text-center font-bold bg-black rounded-md mt-4 py-6"></h2>
+        <div class="flex justify-between mt-4">
+            <button onclick="haddOne()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+1</button>
+            <button onclick="haddTwo()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+2</button>
+            <button onclick="haddThree()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+3</button>
+            <button onclick="hReset()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400">Reset</button>
+        </div>
+    </div>
+    <div id="guestboard" class="px-6 py-6">
+        <h3 class="text-5xl text-white font-bold text-center">GUEST</h3>
+        <h2 id="guest-el" class="block text-8xl text-red-500 text-center font-bold bg-black rounded-md mt-4 py-6"></h2>
+        <div class="flex justify-between mt-4">
+            <button onclick="gaddOne()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+1</button>
+            <button onclick="gaddTwo()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+2</button>
+            <button onclick="gaddThree()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400 mr-1.5">+3</button>
+            <button onclick="gReset()" class="border-solid border-2 border-gray-400 px-2 py-2 rounded-md font-semibold text-gray-400">Reset</button>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
